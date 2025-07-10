@@ -1,10 +1,9 @@
-
 document.getElementById('authForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const codigo = document.getElementById('codigo').value.trim();
     const resultado = document.getElementById('resultado');
-
+    
     // Simulación de la verificación
     if (codigo === 'DIP-448281') {
         resultado.innerHTML = `
@@ -20,3 +19,4 @@ document.getElementById('authForm').addEventListener('submit', function(event) {
         resultado.classList.add('error');
     }
 });
+
